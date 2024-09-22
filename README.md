@@ -1,6 +1,6 @@
 # Online-Qr-Code-Generator
-<h5>Author:Rajkumar Maurya</h5>
-# API Documentation for QR Code Generator
+<h2>Author:Rajkumar Maurya</h2>
+<h1># API Documentation for QR Code Generator</h1>
 
 ## Overview
 
