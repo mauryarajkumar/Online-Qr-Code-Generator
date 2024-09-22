@@ -71,7 +71,7 @@ To generate a QR code, the user must enter text or a URL into the input field an
 
 ### API Endpoint
 
-The QR code generation relies on a third-party API: `https://api.qrserver.com/v1/create-qr-code/`.
+The QR code generation relies on a third-party API: `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example`.
 
 #### Request Method
 
