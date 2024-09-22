@@ -6,7 +6,7 @@ Online Link:https://online-qr-generator-75d5a.web.app/
 
 ## Overview
 
-This documentation outlines the API used in the QR Code Generator application for generating QR codes based on user-provided text or URLs. The application is built using HTML and JavaScript.
+This documentation outlines the API used in the QR Code Generator application for generating QR codes based on user-provided text or URLs. The application is built using HTML CSS and JavaScript.
 
 ## HTML Structure
 
