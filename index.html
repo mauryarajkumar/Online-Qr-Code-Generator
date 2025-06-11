@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qr code genrator</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="continer">
-       <center> <p>Enter your text  </p> 
-      
-        <input type="text" placeholder="Text or URl" id="qrtext">  
-        </center>
-        <div id="imgbox">
-          <center>  
-        <img src="" id="qrcode"> 
-    </center>
-        </div>
-       
-        <center>
-        <button  onclick="generateqr();">Click here!</button>
-    </center>
-    </div>
 
-    <script src="main.js"></script>
+<body>
+    <div class="header">
+        <h1>QR Code Generator</h1>
+        
+            
+                <LAbel>Enter Your text here: </LAbel>
+                <br>
+
+                <input type="text" placeholder="Text or URl" id="qrtext">
+            
+            <div id="imgbox">              
+                    <img src="" id="qrcode">
+            </div>
+
+            
+                <button onclick="generateqr();">Generate!</button>
+                <button onclick="downloadqr();">Download QR Code</button>
+                <button onclick="clearqr();">Clear</button> 
+
+        
+        <div class="footer">
+            <p>Made with ❤️ by <a href="" target="_blank">Rajkumar</a></p>
+        </div>
+
+        <script src="main.js"></script>
 </body>
+
 </html>
