@@ -1,24 +1,25 @@
-body{
-    background-color: rgb(255, 255, 255);
+ /* General reset and base styles */
+body {
+    background-color: #000; /* Removed duplicate background */
     display: flex;
     justify-content: center;
     align-items: center;
-     background-color: rgb(0, 0, 0);
     font-family: 'Courier New', Courier, monospace;
-    margin: 50px;
-    padding: 20px;  
-
+    margin: 0; /* Changed to 0 for better mobile spacing */
+    padding: 40px 20px; /* Padding balanced for mobile & desktop */
+    min-height: 100vh; /* Ensure full screen height */
+    box-sizing: border-box; /* Include padding in width */
 }
 
-
-.header{
-    width: 50%;
+/* Header container */
+.header {
+    width: 100%;
+    max-width: 600px; /* Added max-width to limit on large screens */
     text-align: center;
-    color: rgb(0, 0, 0);
-    font-size: 30px;
+    color: #000;
+    font-size: 28px;
     font-weight: 600;
     margin-bottom: 20px;
-    align-items: center;
     border: 3px solid darkgoldenrod;
     border-radius: 10px;    
     padding: 20px;
@@ -26,34 +27,42 @@ body{
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     overflow: hidden;
-}   
-.header p{
+    box-sizing: border-box;
+}
+
+/* Paragraph styling inside header */
+.header p {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 8px;
     color: white;
 }
+
+/* Image box hidden by default */
 #imgbox {
     display: none;
     margin-top: 10px;
 }
 
-.header input{
-    font-size: 20px;
-    width: 50%;
-    height: 20px;
+/* Input styling */
+.header input {
+    font-size: 16px; /* Adjusted for responsiveness */
+    width: 100%; /* Full width on all screen sizes */
+    height: 40px;
     border: 1px solid darkgoldenrod;
     outline: 0;
     padding: 10px;
     margin: 10px 0 20px;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
-.header button{
-    font-size: 24px;
-    width: 50%;
-    height: 50px;
-    background: #2eb63b ;
+/* Button styling */
+.header button {
+    font-size: 18px;
+    width: 100%;
+    height: 45px;
+    background: #2eb63b;
     color: #fff;
     border: 0;
     outline: 0;
@@ -64,10 +73,47 @@ body{
     font-weight: 500;
     transition: all 0.3s ease;
 }
-.header button:hover{
+
+.header button:hover {
     background: #138b1f;
-    color: #fff;
     transform: translateY(-5px);
     box-shadow: 0 15px 20px rgba(0,0,0,0.2);
-}   
+}
+
+/* Keyframe for animated background */
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Responsive for tablets */
+@media screen and (max-width: 768px) {
+    .header {
+        font-size: 22px; /* Slightly smaller font */
+        padding: 15px;
+    }
+
+    .header input, .header button {
+        font-size: 16px;
+        height: 40px;
+    }
+}
+
+/* Responsive for small phones */
+@media screen and (max-width: 480px) {
+    .header {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .header input, .header button {
+        font-size: 14px;
+        height: 35px;
+    }
+}
 
