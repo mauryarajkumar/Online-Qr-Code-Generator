@@ -1,7 +1,7 @@
 
 # Online-Qr-Code-Generator
 <h2>Author:Rajkumar Maurya</h2>
-Online Link:https://online-qr-generator-75d5a.web.app/
+Online Link:https://online-qr-code-generator-h3o26zcua-mauryarajkumars-projects.vercel.app/
 <h1># API Documentation for QR Code Generator</h1>
 
 ## Overview
